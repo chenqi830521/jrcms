@@ -40,13 +40,13 @@ podTemplate(
             }
             
             stage("Deploy to test environment") {
-                deployToEB('test')
+                deployToEB('JrcmsRoger-env-test')
             }
             
             stage("Integration test to test environment") {  
-                smokeTest('test')
+                smokeTest('JrcmsRoger-env-test')
             }
-            
+            /*
             stage("Deploy to staging environment") {
                 deployToEB('staging')
             }
@@ -57,7 +57,7 @@ podTemplate(
             
             stage("Deploy to production environment") {
                 deployToEB('production')
-            }
+            }*/
         }
     }
 }
