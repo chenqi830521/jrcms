@@ -77,7 +77,7 @@ def deployToEB(environment) {
                 withEnv(["AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}", "AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}", "AWS_REGION=ap-southeast-2"]) {
                     dir("deployment") {
                     sh "sh generate-dockerrun.sh ${currentBuild.number}"
-                    sh "eb deploy jrcms-${environment} -l ${currentBuild.number}"
+                    sh "eb deploy JrcmsRoger-env-${environment} -l ${currentBuild.number}"
                     }
                 }
             }
