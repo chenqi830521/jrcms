@@ -64,7 +64,7 @@ podTemplate(
 
 
 def smokeTest(environment) {     
-    container('eb') {l
+    container('eb') {
     	// 添加测试内容
     }
 }
