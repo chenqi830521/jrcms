@@ -1,7 +1,7 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "davisliu/jrcms:aaa",
+    "Name": "chenqi830521/jrcms:rogerjrcms",
     "Update": "true"
   },
   "Ports": [
